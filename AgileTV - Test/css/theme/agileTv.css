@@ -1,0 +1,10 @@
+.selected-menu{
+    color: #15c993 !important;
+}
+.selected-menu-border{
+    color: #15c993 !important;
+    border-bottom: 3px solid #15c993;
+}
+.iconWhite{
+    color: #ffffffc9;
+}

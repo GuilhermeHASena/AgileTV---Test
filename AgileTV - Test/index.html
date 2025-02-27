@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/base/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrty="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="https://agiletv.com/wp-content/uploads/2024/11/agile-tv-icon-e1732018103457-75x75.png" sizes="32x32">
+    <title>Series</title>
+</head>
+<body onload="onLoadTvShow()">
+    <section class="main-container">
+        <div class="presentation">
+            <div class="presentation-top">
+                <h1 class="presentation-title l-textBold"></h1>
+                <h2 class="presentation-subtitle l-textUpper"></h2>
+            </div>
+            <div class="presentation-bottom">
+                <div class="presentation-bottom-menu">
+                    <ul>
+                        <li class="l-textBold cursor-pointer" onclick="loadEpisodesSeason(1)">T1</li>
+                    </ul>
+                </div>
+                <div class="presentation-bottom-list">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+
+        <footer class="nav">
+            <div class="nav-top">
+                <div class="nav-top-menu">
+                    <ul>
+                        <li class="l-textUpper cursor-pointer selected-menu-border" id="btn-general">Geral</li>
+                        <li class="l-textUpper cursor-pointer" id="btn-cast">Elenco</li>
+                    </ul>
+                </div>
+                <div class="nav-top-right">
+                    <img src="/images/logo/Telecine_logo.png" alt="Telecine Logo" class="nav-channel-img">
+                </div>
+            </div>
+            <div class="nav-bottom animate__animated" id="components-general">
+                <div class="nav-action-buttons">
+                    <ul>
+                        <li><i class="fa-solid fa-plus cursor-pointer"></i> Minha Lista</li>
+                        <li><i class="fa-solid fa-face-smile cursor-pointer"></i>Avaliar</li>
+                        <li><i class="fa-regular fa-circle-dot cursor-pointer"></i>Gravar</li>
+                        <li><i class="fa-solid fa-share cursor-pointer"></i>Compartilhar</li>
+                    </ul>
+                </div>
+                <div class="nav-synopsis">
+                    <h2 class="nav-synopsis-title l-textUpper">Sinopse</h2>
+                    <h3 class="nav-synopsis-text"></h3>
+                </div>
+            </div>
+            <div class="nav-bottom animate__animated is-invisible" id="components-cast">
+                <ul class="nav-bottom-list">
+                </ul>
+            </div>
+        </footer>
+    </section>
+    <script src="/js/front-functionalities/tvShow.js"></script>
+    <script src="/js/requests/episodesData.js"></script>
+    <script src="/js/requests/tvShowData.js"></script>
+</body>
+</html>

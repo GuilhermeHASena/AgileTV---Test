@@ -1,0 +1,6 @@
+.is-invisible{
+    max-height: 0 !important;
+    pointer-events: none;
+    padding: 0 !important;
+    border: none !important;
+}
